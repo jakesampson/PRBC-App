@@ -12,6 +12,8 @@
 		23BB1B3B22082040006F34DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23BB1B3922082040006F34DF /* Main.storyboard */; };
 		23BB1B3D22082042006F34DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23BB1B3C22082042006F34DF /* Assets.xcassets */; };
 		23BB1B4022082042006F34DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23BB1B3E22082042006F34DF /* LaunchScreen.storyboard */; };
+		23BB1B482208235D006F34DF /* Blog JSON Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BB1B472208235D006F34DF /* Blog JSON Struct.swift */; };
+		23BB1B4B22083BA3006F34DF /* Blog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23BB1B4A22083BA3006F34DF /* Blog.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		23BB1B3C22082042006F34DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23BB1B3F22082042006F34DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23BB1B4122082042006F34DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23BB1B472208235D006F34DF /* Blog JSON Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Blog JSON Struct.swift"; sourceTree = "<group>"; };
+		23BB1B4A22083BA3006F34DF /* Blog.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Blog.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +61,37 @@
 				23BB1B3522082040006F34DF /* AppDelegate.swift */,
 				23BB1B3722082040006F34DF /* ViewController.swift */,
 				23BB1B3922082040006F34DF /* Main.storyboard */,
+				23BB1B4C22083C67006F34DF /* Views */,
+				23BB1B4D22083C75006F34DF /* Controllers */,
 				23BB1B3C22082042006F34DF /* Assets.xcassets */,
 				23BB1B3E22082042006F34DF /* LaunchScreen.storyboard */,
 				23BB1B4122082042006F34DF /* Info.plist */,
 			);
 			path = "Park Ridge Baptist Church";
+			sourceTree = "<group>";
+		};
+		23BB1B49220839EC006F34DF /* JSON Structs */ = {
+			isa = PBXGroup;
+			children = (
+				23BB1B472208235D006F34DF /* Blog JSON Struct.swift */,
+			);
+			path = "JSON Structs";
+			sourceTree = "<group>";
+		};
+		23BB1B4C22083C67006F34DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				23BB1B4A22083BA3006F34DF /* Blog.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		23BB1B4D22083C75006F34DF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				23BB1B49220839EC006F34DF /* JSON Structs */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +154,7 @@
 			files = (
 				23BB1B4022082042006F34DF /* LaunchScreen.storyboard in Resources */,
 				23BB1B3D22082042006F34DF /* Assets.xcassets in Resources */,
+				23BB1B4B22083BA3006F34DF /* Blog.storyboard in Resources */,
 				23BB1B3B22082040006F34DF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23BB1B482208235D006F34DF /* Blog JSON Struct.swift in Sources */,
 				23BB1B3822082040006F34DF /* ViewController.swift in Sources */,
 				23BB1B3622082040006F34DF /* AppDelegate.swift in Sources */,
 			);

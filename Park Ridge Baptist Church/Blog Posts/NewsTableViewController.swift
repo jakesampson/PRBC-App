@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UITableViewController, UISearchResultsUpdating {
+class NewsTableViewController: UITableViewController, UISearchResultsUpdating {
 
     var allBlogPosts = [Post]()
     var filteredBlogPosts = [Post]()

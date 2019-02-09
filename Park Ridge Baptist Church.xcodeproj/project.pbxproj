@@ -12,8 +12,10 @@
 		23BB1B3B22082040006F34DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23BB1B3922082040006F34DF /* Main.storyboard */; };
 		23BB1B3D22082042006F34DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23BB1B3C22082042006F34DF /* Assets.xcassets */; };
 		23BB1B4022082042006F34DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23BB1B3E22082042006F34DF /* LaunchScreen.storyboard */; };
-		23BB1B482208235D006F34DF /* Blog JSON Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BB1B472208235D006F34DF /* Blog JSON Struct.swift */; };
+		23BB1B482208235D006F34DF /* JSON Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BB1B472208235D006F34DF /* JSON Struct.swift */; };
 		23BB1B4B22083BA3006F34DF /* Blog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23BB1B4A22083BA3006F34DF /* Blog.storyboard */; };
+		23BB1B702209A820006F34DF /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BB1B6F2209A820006F34DF /* JSONDecoder.swift */; };
+		23BB1B732209B3A4006F34DF /* DetailBlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BB1B722209B3A4006F34DF /* DetailBlogViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +26,10 @@
 		23BB1B3C22082042006F34DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23BB1B3F22082042006F34DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23BB1B4122082042006F34DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		23BB1B472208235D006F34DF /* Blog JSON Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Blog JSON Struct.swift"; sourceTree = "<group>"; };
+		23BB1B472208235D006F34DF /* JSON Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSON Struct.swift"; sourceTree = "<group>"; };
 		23BB1B4A22083BA3006F34DF /* Blog.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Blog.storyboard; sourceTree = "<group>"; };
+		23BB1B6F2209A820006F34DF /* JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
+		23BB1B722209B3A4006F34DF /* DetailBlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBlogViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +65,9 @@
 				23BB1B3522082040006F34DF /* AppDelegate.swift */,
 				23BB1B3722082040006F34DF /* ViewController.swift */,
 				23BB1B3922082040006F34DF /* Main.storyboard */,
-				23BB1B4C22083C67006F34DF /* Views */,
-				23BB1B4D22083C75006F34DF /* Controllers */,
+				23BB1B722209B3A4006F34DF /* DetailBlogViewController.swift */,
+				23BB1B4A22083BA3006F34DF /* Blog.storyboard */,
+				23BB1B4D22083C75006F34DF /* Models */,
 				23BB1B3C22082042006F34DF /* Assets.xcassets */,
 				23BB1B3E22082042006F34DF /* LaunchScreen.storyboard */,
 				23BB1B4122082042006F34DF /* Info.plist */,
@@ -70,28 +75,21 @@
 			path = "Park Ridge Baptist Church";
 			sourceTree = "<group>";
 		};
-		23BB1B49220839EC006F34DF /* JSON Structs */ = {
+		23BB1B49220839EC006F34DF /* JSON Handling */ = {
 			isa = PBXGroup;
 			children = (
-				23BB1B472208235D006F34DF /* Blog JSON Struct.swift */,
+				23BB1B6F2209A820006F34DF /* JSONDecoder.swift */,
+				23BB1B472208235D006F34DF /* JSON Struct.swift */,
 			);
-			path = "JSON Structs";
+			path = "JSON Handling";
 			sourceTree = "<group>";
 		};
-		23BB1B4C22083C67006F34DF /* Views */ = {
+		23BB1B4D22083C75006F34DF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				23BB1B4A22083BA3006F34DF /* Blog.storyboard */,
+				23BB1B49220839EC006F34DF /* JSON Handling */,
 			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		23BB1B4D22083C75006F34DF /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				23BB1B49220839EC006F34DF /* JSON Structs */,
-			);
-			path = Controllers;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,7 +164,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23BB1B482208235D006F34DF /* Blog JSON Struct.swift in Sources */,
+				23BB1B702209A820006F34DF /* JSONDecoder.swift in Sources */,
+				23BB1B732209B3A4006F34DF /* DetailBlogViewController.swift in Sources */,
+				23BB1B482208235D006F34DF /* JSON Struct.swift in Sources */,
 				23BB1B3822082040006F34DF /* ViewController.swift in Sources */,
 				23BB1B3622082040006F34DF /* AppDelegate.swift in Sources */,
 			);
@@ -315,16 +315,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GCWN9D566R;
+				DEVELOPMENT_TEAM = GXS8S5Y9H5;
 				INFOPLIST_FILE = "Park Ridge Baptist Church/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "co.jakesampson.Park-Ridge-Baptist-Church";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jakesampson.Park-Ridge-Baptist-Church";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -333,16 +334,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GCWN9D566R;
+				DEVELOPMENT_TEAM = GXS8S5Y9H5;
 				INFOPLIST_FILE = "Park Ridge Baptist Church/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "co.jakesampson.Park-Ridge-Baptist-Church";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jakesampson.Park-Ridge-Baptist-Church";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

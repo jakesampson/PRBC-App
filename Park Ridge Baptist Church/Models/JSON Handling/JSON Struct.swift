@@ -21,3 +21,16 @@ struct Post: Codable {
         let protected: Bool
         }
 }
+
+extension Array where Element == Post {
+    func matching (_ text: String?) -> [Post] {
+        if let text = text, text.count > 0 {
+            return self.filter {
+                $0.title.rendered.contains(text)
+                    || $0.content.rendered.contains(text)
+            }
+        } else {
+            return self
+        }
+    }
+}

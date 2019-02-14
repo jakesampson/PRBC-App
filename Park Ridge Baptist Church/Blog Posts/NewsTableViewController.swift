@@ -17,7 +17,6 @@ class NewsTableViewController: UITableViewController, UISearchResultsUpdating {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
         
         let search = UISearchController(searchResultsController: nil)
         search.obscuresBackgroundDuringPresentation = false
@@ -40,10 +39,11 @@ class NewsTableViewController: UITableViewController, UISearchResultsUpdating {
         
         
         cell.textLabel?.text = blogPost.title.rendered
-        cell.detailTextLabel?.text = blogPost.content.rendered
+        
         
         return cell
     }
+    
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = DetailBlogViewController()
@@ -64,6 +64,7 @@ class NewsTableViewController: UITableViewController, UISearchResultsUpdating {
     func downloadPosts() {
         DispatchQueue.global().async {
             do {
+                
                 let url = URL(string: "https://www.prbc.org.au/wp-json/wp/v2/posts")!
                 let data = try Data(contentsOf: url)
                 

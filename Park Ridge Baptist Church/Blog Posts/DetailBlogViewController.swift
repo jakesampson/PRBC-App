@@ -17,11 +17,14 @@ class DetailBlogViewController: UIViewController {
     override func loadView() {
         webView = WKWebView()
         view = webView
+        
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
         guard let detailItem = detailItem else { return }
         

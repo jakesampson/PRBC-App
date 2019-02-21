@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2349419C221546B300BCBD32 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2349419B221546B300BCBD32 /* LocationViewController.swift */; };
+		234941A22215477B00BCBD32 /* LocationView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234941A12215477B00BCBD32 /* LocationView.storyboard */; };
+		234941A42215489300BCBD32 /* GivingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234941A32215489300BCBD32 /* GivingViewController.swift */; };
+		234941A6221548A300BCBD32 /* GivingView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234941A5221548A300BCBD32 /* GivingView.storyboard */; };
+		234941AA2215497400BCBD32 /* TeamView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234941A92215497400BCBD32 /* TeamView.storyboard */; };
+		234941AC2215498000BCBD32 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234941AB2215498000BCBD32 /* TeamViewController.swift */; };
+		23AAB95A221D755A000EFB52 /* Montserrat-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 23AAB958221D72CB000EFB52 /* Montserrat-Black.otf */; };
+		23AAB95B221D755D000EFB52 /* Montserrat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 23AAB957221D72CA000EFB52 /* Montserrat-Bold.otf */; };
+		23AAB95C221D755F000EFB52 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 23AAB959221D72CB000EFB52 /* Montserrat-Regular.otf */; };
+		23AAB95D221D7562000EFB52 /* OpenSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23AAB956221D72CA000EFB52 /* OpenSans.ttf */; };
 		23BB1B3622082040006F34DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BB1B3522082040006F34DF /* AppDelegate.swift */; };
 		23BB1B3822082040006F34DF /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BB1B3722082040006F34DF /* NewsTableViewController.swift */; };
 		23BB1B3B22082040006F34DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23BB1B3922082040006F34DF /* Main.storyboard */; };
@@ -16,9 +26,20 @@
 		23BB1B4B22083BA3006F34DF /* Blog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23BB1B4A22083BA3006F34DF /* Blog.storyboard */; };
 		23BB1B702209A820006F34DF /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BB1B6F2209A820006F34DF /* JSONDecoder.swift */; };
 		23BB1B732209B3A4006F34DF /* DetailBlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BB1B722209B3A4006F34DF /* DetailBlogViewController.swift */; };
+		23C54238221D324E00F0B431 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C54237221D324E00F0B431 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2349419B221546B300BCBD32 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		234941A12215477B00BCBD32 /* LocationView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LocationView.storyboard; sourceTree = "<group>"; };
+		234941A32215489300BCBD32 /* GivingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GivingViewController.swift; sourceTree = "<group>"; };
+		234941A5221548A300BCBD32 /* GivingView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GivingView.storyboard; sourceTree = "<group>"; };
+		234941A92215497400BCBD32 /* TeamView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TeamView.storyboard; sourceTree = "<group>"; };
+		234941AB2215498000BCBD32 /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
+		23AAB956221D72CA000EFB52 /* OpenSans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OpenSans.ttf; sourceTree = "<group>"; };
+		23AAB957221D72CA000EFB52 /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.otf"; sourceTree = "<group>"; };
+		23AAB958221D72CB000EFB52 /* Montserrat-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.otf"; sourceTree = "<group>"; };
+		23AAB959221D72CB000EFB52 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
 		23BB1B3222082040006F34DF /* Park Ridge Baptist Church.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Park Ridge Baptist Church.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23BB1B3522082040006F34DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23BB1B3722082040006F34DF /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +51,7 @@
 		23BB1B4A22083BA3006F34DF /* Blog.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Blog.storyboard; sourceTree = "<group>"; };
 		23BB1B6F2209A820006F34DF /* JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
 		23BB1B722209B3A4006F34DF /* DetailBlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBlogViewController.swift; sourceTree = "<group>"; };
+		23C54237221D324E00F0B431 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +65,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		234941A7221548A700BCBD32 /* Giving */ = {
+			isa = PBXGroup;
+			children = (
+				234941A5221548A300BCBD32 /* GivingView.storyboard */,
+				234941A32215489300BCBD32 /* GivingViewController.swift */,
+			);
+			path = Giving;
+			sourceTree = "<group>";
+		};
+		234941A82215492200BCBD32 /* PRBC Team */ = {
+			isa = PBXGroup;
+			children = (
+				234941A92215497400BCBD32 /* TeamView.storyboard */,
+				234941AB2215498000BCBD32 /* TeamViewController.swift */,
+			);
+			path = "PRBC Team";
+			sourceTree = "<group>";
+		};
+		23AAB955221D72BC000EFB52 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				23AAB958221D72CB000EFB52 /* Montserrat-Black.otf */,
+				23AAB957221D72CA000EFB52 /* Montserrat-Bold.otf */,
+				23AAB959221D72CB000EFB52 /* Montserrat-Regular.otf */,
+				23AAB956221D72CA000EFB52 /* OpenSans.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		23BB1B2922082040006F34DF = {
 			isa = PBXGroup;
 			children = (
@@ -64,10 +115,15 @@
 			children = (
 				23BB1B3522082040006F34DF /* AppDelegate.swift */,
 				23BB1B3922082040006F34DF /* Main.storyboard */,
+				23C54237221D324E00F0B431 /* TabBarViewController.swift */,
+				23E6D6D5221ACDE500DA1DF9 /* Location */,
 				23BB1B4D22083C75006F34DF /* Blog Posts */,
+				234941A7221548A700BCBD32 /* Giving */,
+				234941A82215492200BCBD32 /* PRBC Team */,
 				23BB1B3C22082042006F34DF /* Assets.xcassets */,
 				23BB1B3E22082042006F34DF /* LaunchScreen.storyboard */,
 				23BB1B4122082042006F34DF /* Info.plist */,
+				23AAB955221D72BC000EFB52 /* Fonts */,
 			);
 			path = "Park Ridge Baptist Church";
 			sourceTree = "<group>";
@@ -90,6 +146,15 @@
 				23BB1B49220839EC006F34DF /* Model */,
 			);
 			path = "Blog Posts";
+			sourceTree = "<group>";
+		};
+		23E6D6D5221ACDE500DA1DF9 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				2349419B221546B300BCBD32 /* LocationViewController.swift */,
+				234941A12215477B00BCBD32 /* LocationView.storyboard */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,10 +215,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				234941AA2215497400BCBD32 /* TeamView.storyboard in Resources */,
 				23BB1B4022082042006F34DF /* LaunchScreen.storyboard in Resources */,
 				23BB1B3D22082042006F34DF /* Assets.xcassets in Resources */,
+				23AAB95C221D755F000EFB52 /* Montserrat-Regular.otf in Resources */,
 				23BB1B4B22083BA3006F34DF /* Blog.storyboard in Resources */,
+				23AAB95A221D755A000EFB52 /* Montserrat-Black.otf in Resources */,
+				23AAB95D221D7562000EFB52 /* OpenSans.ttf in Resources */,
 				23BB1B3B22082040006F34DF /* Main.storyboard in Resources */,
+				234941A22215477B00BCBD32 /* LocationView.storyboard in Resources */,
+				234941A6221548A300BCBD32 /* GivingView.storyboard in Resources */,
+				23AAB95B221D755D000EFB52 /* Montserrat-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,7 +236,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2349419C221546B300BCBD32 /* LocationViewController.swift in Sources */,
+				234941AC2215498000BCBD32 /* TeamViewController.swift in Sources */,
 				23BB1B702209A820006F34DF /* JSONDecoder.swift in Sources */,
+				234941A42215489300BCBD32 /* GivingViewController.swift in Sources */,
+				23C54238221D324E00F0B431 /* TabBarViewController.swift in Sources */,
 				23BB1B732209B3A4006F34DF /* DetailBlogViewController.swift in Sources */,
 				23BB1B482208235D006F34DF /* JSON Struct.swift in Sources */,
 				23BB1B3822082040006F34DF /* NewsTableViewController.swift in Sources */,
@@ -314,7 +390,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = GXS8S5Y9H5;
 				INFOPLIST_FILE = "Park Ridge Baptist Church/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -322,8 +399,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jakesampson.Park-Ridge-Baptist-Church";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jakesampson.ParkRidgeBaptistChurch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = PRBCDevelopmentProfile;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -333,7 +411,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = GXS8S5Y9H5;
 				INFOPLIST_FILE = "Park Ridge Baptist Church/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -341,8 +420,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jakesampson.Park-Ridge-Baptist-Church";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jakesampson.ParkRidgeBaptistChurch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = PRBCDevelopmentProfile;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

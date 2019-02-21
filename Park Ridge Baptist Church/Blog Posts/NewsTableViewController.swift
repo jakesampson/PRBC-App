@@ -18,11 +18,9 @@ class NewsTableViewController: UITableViewController, UISearchResultsUpdating {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let search = UISearchController(searchResultsController: nil)
-        search.obscuresBackgroundDuringPresentation = false
-        search.searchBar.placeholder = "Search PRBC"
-        search.searchResultsUpdater = self
-        navigationItem.searchController = search
+        
+        title = "What's New"
+        
         
         downloadPosts()
 

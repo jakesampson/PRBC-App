@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2be-sd-TzY">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Black.otf">
+            <string>Montserrat-Black</string>
+        </array>
+        <array key="Montserrat-Bold.otf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Giving-->
+        <scene sceneID="Rdn-D0-Fyh">
+            <objects>
+                <viewController id="B2U-sU-3ki" customClass="GivingViewController" customModule="Park_Ridge_Baptist_Church" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tPB-Po-VDK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GivingBG" translatesAutoresizingMaskIntoConstraints="NO" id="BNT-v7-23t">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you wish to give online, our details can be found below:" textAlignment="center" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJ1-I5-Cng">
+                                <rect key="frame" x="0.0" y="155" width="375" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="IAV-g6-FQh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BSB:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKI-Z8-3YF">
+                                <rect key="frame" x="16" y="328" width="91" height="39.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="THW-Ej-DqF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Black" family="Montserrat" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="704913" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TO3-i5-1Dt">
+                                <rect key="frame" x="136" y="328" width="107.66666666666669" height="39.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACC:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Im9-Cj-Of9">
+                                <rect key="frame" x="16" y="377.33333333333331" width="91" height="39.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Black" family="Montserrat" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="400039178" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AK8-RS-wHa">
+                                <rect key="frame" x="136" y="377.33333333333331" width="168" height="39.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Park Ridge Baptist Church" textAlignment="center" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1i-WY-idV">
+                                <rect key="frame" x="147" y="425.66666666666669" width="228" height="77.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9v-Pe-lUO">
+                                <rect key="frame" x="16" y="444.66666666666669" width="111" height="39.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="111" id="MoF-FE-cYd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Black" family="Montserrat" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="i9v-Pe-lUO" firstAttribute="centerY" secondItem="d1i-WY-idV" secondAttribute="centerY" id="1D7-hf-52C"/>
+                            <constraint firstAttribute="bottom" secondItem="BNT-v7-23t" secondAttribute="bottom" id="2LE-Oq-Pnt"/>
+                            <constraint firstItem="qJ1-I5-Cng" firstAttribute="top" secondItem="Rb4-2g-YFX" secondAttribute="top" constant="67" id="4aE-LA-hF8"/>
+                            <constraint firstItem="BNT-v7-23t" firstAttribute="top" secondItem="Rb4-2g-YFX" secondAttribute="top" id="6sU-b9-eNw"/>
+                            <constraint firstItem="TO3-i5-1Dt" firstAttribute="leading" secondItem="xKI-Z8-3YF" secondAttribute="trailing" constant="29" id="BhU-Kq-HQG"/>
+                            <constraint firstItem="xKI-Z8-3YF" firstAttribute="bottom" secondItem="TO3-i5-1Dt" secondAttribute="bottom" id="FsP-r7-3Km"/>
+                            <constraint firstAttribute="trailing" secondItem="qJ1-I5-Cng" secondAttribute="trailing" id="UYC-7O-aG7"/>
+                            <constraint firstItem="Im9-Cj-Of9" firstAttribute="top" secondItem="AK8-RS-wHa" secondAttribute="top" id="V3J-lp-vUm"/>
+                            <constraint firstItem="xKI-Z8-3YF" firstAttribute="trailing" secondItem="Im9-Cj-Of9" secondAttribute="trailing" id="WSS-pB-tXl"/>
+                            <constraint firstItem="i9v-Pe-lUO" firstAttribute="leading" secondItem="Im9-Cj-Of9" secondAttribute="leading" id="Y8a-mK-lsM"/>
+                            <constraint firstItem="i9v-Pe-lUO" firstAttribute="top" secondItem="Im9-Cj-Of9" secondAttribute="bottom" constant="28" id="cji-sY-4Kg"/>
+                            <constraint firstItem="BNT-v7-23t" firstAttribute="leading" secondItem="tPB-Po-VDK" secondAttribute="leading" id="dIX-wn-DDB"/>
+                            <constraint firstItem="qJ1-I5-Cng" firstAttribute="leading" secondItem="BNT-v7-23t" secondAttribute="leading" id="dtQ-H7-dX6"/>
+                            <constraint firstItem="TO3-i5-1Dt" firstAttribute="leading" secondItem="AK8-RS-wHa" secondAttribute="leading" id="eJp-9n-gwn"/>
+                            <constraint firstItem="Im9-Cj-Of9" firstAttribute="top" secondItem="xKI-Z8-3YF" secondAttribute="bottom" constant="10" id="hra-UW-Ezd"/>
+                            <constraint firstItem="xKI-Z8-3YF" firstAttribute="leading" secondItem="tPB-Po-VDK" secondAttribute="leadingMargin" id="m7v-JT-lda"/>
+                            <constraint firstItem="Rb4-2g-YFX" firstAttribute="bottom" secondItem="d1i-WY-idV" secondAttribute="bottom" constant="226" id="os5-VS-i8U"/>
+                            <constraint firstItem="xKI-Z8-3YF" firstAttribute="top" secondItem="TO3-i5-1Dt" secondAttribute="top" id="pKh-Hl-ldQ"/>
+                            <constraint firstItem="d1i-WY-idV" firstAttribute="leading" secondItem="i9v-Pe-lUO" secondAttribute="trailing" constant="20" id="pMw-pv-3NQ"/>
+                            <constraint firstItem="xKI-Z8-3YF" firstAttribute="leading" secondItem="Im9-Cj-Of9" secondAttribute="leading" id="s8y-iv-RLj"/>
+                            <constraint firstItem="d1i-WY-idV" firstAttribute="trailing" secondItem="qJ1-I5-Cng" secondAttribute="trailing" id="wzH-qX-GAp"/>
+                            <constraint firstItem="Rb4-2g-YFX" firstAttribute="bottom" secondItem="i9v-Pe-lUO" secondAttribute="bottom" constant="245" id="xc7-ey-GmK"/>
+                            <constraint firstItem="Im9-Cj-Of9" firstAttribute="bottom" secondItem="AK8-RS-wHa" secondAttribute="bottom" id="yP5-2C-QcY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rb4-2g-YFX"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Giving" largeTitleDisplayMode="always" id="Dp9-kn-jaP"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jt0-7J-KrN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039.2" y="158.12807881773401"/>
+        </scene>
+        <!--Giving-->
+        <scene sceneID="mc0-xy-yQN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2be-sd-TzY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Giving" image="GivingIcon" id="sxS-vS-9HZ"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9T6-CQ-WQ9">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="B2U-sU-3ki" kind="relationship" relationship="rootViewController" id="MLW-aV-s51"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GaH-y3-rqe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96.799999999999997" y="158.12807881773401"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GivingBG" width="375" height="812"/>
+        <image name="GivingIcon" width="30" height="30"/>
+    </resources>
+</document>

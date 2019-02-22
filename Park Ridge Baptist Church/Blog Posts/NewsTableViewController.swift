@@ -8,30 +8,31 @@
 
 import UIKit
 
-class NewsTableViewController: UITableViewController, UISearchResultsUpdating {
+class NewsTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var allBlogPosts = [Post]()
     var filteredBlogPosts = [Post]()
     
+    @IBOutlet weak var blogTableView: UITableView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-        title = "What's New"
-        
+        self.blogTableView.layer.cornerRadius = 10
+        self.blogTableView.layer.masksToBounds = true
         
         downloadPosts()
 
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return filteredBlogPosts.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = blogTableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         let blogPost = filteredBlogPosts[indexPath.row]
         
         
@@ -43,7 +44,7 @@ class NewsTableViewController: UITableViewController, UISearchResultsUpdating {
     }
     
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = DetailBlogViewController()
         
         vc.detailItem = allBlogPosts[indexPath.row]
@@ -51,12 +52,7 @@ class NewsTableViewController: UITableViewController, UISearchResultsUpdating {
     }
 
 
-    func updateSearchResults(for searchController: UISearchController) {
-        filteredBlogPosts = allBlogPosts.matching(searchController.searchBar.text)
-        
-        tableView.reloadData()
-        
-    }
+
     
     
     func downloadPosts() {
@@ -73,7 +69,7 @@ class NewsTableViewController: UITableViewController, UISearchResultsUpdating {
                 DispatchQueue.main.async {
                     self.allBlogPosts = downloadedBlogPosts
                     self.filteredBlogPosts = downloadedBlogPosts
-                    self.tableView.reloadData()
+                    self.blogTableView.reloadData()
                     
                 }
             } catch {

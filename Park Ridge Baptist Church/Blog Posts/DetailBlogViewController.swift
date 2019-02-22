@@ -18,6 +18,8 @@ class DetailBlogViewController: UIViewController {
         webView = WKWebView()
         view = webView
         
+        title = detailItem?.title.rendered
+        
     }
     
     

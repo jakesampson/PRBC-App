@@ -116,8 +116,8 @@
 				23BB1B3522082040006F34DF /* AppDelegate.swift */,
 				23BB1B3922082040006F34DF /* Main.storyboard */,
 				23C54237221D324E00F0B431 /* TabBarViewController.swift */,
-				23E6D6D5221ACDE500DA1DF9 /* Location */,
 				23BB1B4D22083C75006F34DF /* Blog Posts */,
+				23E6D6D5221ACDE500DA1DF9 /* Location */,
 				234941A7221548A700BCBD32 /* Giving */,
 				234941A82215492200BCBD32 /* PRBC Team */,
 				23BB1B3C22082042006F34DF /* Assets.xcassets */,
@@ -151,8 +151,8 @@
 		23E6D6D5221ACDE500DA1DF9 /* Location */ = {
 			isa = PBXGroup;
 			children = (
-				2349419B221546B300BCBD32 /* LocationViewController.swift */,
 				234941A12215477B00BCBD32 /* LocationView.storyboard */,
+				2349419B221546B300BCBD32 /* LocationViewController.swift */,
 			);
 			path = Location;
 			sourceTree = "<group>";

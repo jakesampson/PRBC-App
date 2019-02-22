@@ -29,6 +29,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qTg-k3-lA2">
                                 <rect key="frame" x="20" y="196" width="335" height="493"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="335" id="Mi3-Xd-90M"/>
+                                    <constraint firstAttribute="width" secondItem="qTg-k3-lA2" secondAttribute="height" multiplier="335:493" id="OLA-gc-snt"/>
+                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="7lq-2C-k4i" style="IBUITableViewCellStyleDefault" id="j2N-x0-0jp">
                                         <rect key="frame" x="0.0" y="28" width="335" height="44"/>
@@ -55,23 +59,22 @@
                                 </connections>
                             </tableView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlogTitle" translatesAutoresizingMaskIntoConstraints="NO" id="oSr-O1-jx4">
-                                <rect key="frame" x="0.0" y="88" width="230" height="86"/>
+                                <rect key="frame" x="0.0" y="85" width="323" height="86"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="86" id="jec-Mq-HbL"/>
+                                    <constraint firstAttribute="height" constant="86" id="A1w-FQ-AEo"/>
+                                    <constraint firstAttribute="width" constant="323" id="oTY-oQ-0tl"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="9YS-YN-LsT" firstAttribute="leading" secondItem="oSr-O1-jx4" secondAttribute="leading" id="2ov-Uy-teq"/>
+                            <constraint firstItem="oSr-O1-jx4" firstAttribute="leading" secondItem="FFh-be-WS1" secondAttribute="leading" id="0aZ-YC-X0W"/>
                             <constraint firstItem="qTg-k3-lA2" firstAttribute="leading" secondItem="uDm-Zc-iIE" secondAttribute="leading" constant="20" id="CSn-MX-Ia5"/>
                             <constraint firstItem="9YS-YN-LsT" firstAttribute="leading" secondItem="FFh-be-WS1" secondAttribute="leading" id="GdY-12-TSG"/>
-                            <constraint firstItem="oSr-O1-jx4" firstAttribute="top" secondItem="uDm-Zc-iIE" secondAttribute="top" id="MY0-7v-tIe"/>
+                            <constraint firstItem="oSr-O1-jx4" firstAttribute="top" secondItem="FFh-be-WS1" secondAttribute="top" constant="85" id="Pzn-II-uOj"/>
                             <constraint firstItem="9YS-YN-LsT" firstAttribute="top" secondItem="FFh-be-WS1" secondAttribute="top" id="Xhu-FG-NJN"/>
-                            <constraint firstItem="qTg-k3-lA2" firstAttribute="top" secondItem="oSr-O1-jx4" secondAttribute="bottom" constant="22" id="YMw-zD-SXp"/>
                             <constraint firstItem="uDm-Zc-iIE" firstAttribute="bottom" secondItem="qTg-k3-lA2" secondAttribute="bottom" constant="40" id="hOx-rb-fS7"/>
                             <constraint firstItem="9YS-YN-LsT" firstAttribute="centerX" secondItem="qTg-k3-lA2" secondAttribute="centerX" id="ogo-OF-PZE"/>
-                            <constraint firstItem="uDm-Zc-iIE" firstAttribute="trailing" secondItem="oSr-O1-jx4" secondAttribute="trailing" constant="145" id="tRg-Cj-MP1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uDm-Zc-iIE"/>
                     </view>
@@ -112,6 +115,6 @@
     <resources>
         <image name="BlogBG" width="375" height="812"/>
         <image name="BlogIcon" width="30" height="30"/>
-        <image name="BlogTitle" width="224" height="50"/>
+        <image name="BlogTitle" width="314" height="57"/>
     </resources>
 </document>

@@ -30,7 +30,7 @@
                                 <rect key="frame" x="20" y="196" width="335" height="493"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="7lq-2C-k4i" style="IBUITableViewCellStyleDefault" id="j2N-x0-0jp">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="7lq-2C-k4i" style="IBUITableViewCellStyleDefault" id="j2N-x0-0jp">
                                         <rect key="frame" x="0.0" y="28" width="335" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="j2N-x0-0jp" id="i3c-WG-n3v">
@@ -88,7 +88,9 @@
         <scene sceneID="3qc-ZT-eNY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fFp-Ma-4fj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Whats New" image="BlogIcon" id="nrJ-m4-c4p"/>
+                    <tabBarItem key="tabBarItem" title="Whats New" image="BlogIcon" id="nrJ-m4-c4p">
+                        <color key="badgeColor" red="0.25153160095214844" green="0.3804258406162262" blue="0.60394817590713501" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6ko-Lm-J0Z">

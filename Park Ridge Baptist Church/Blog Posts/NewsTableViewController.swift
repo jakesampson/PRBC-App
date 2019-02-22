@@ -22,6 +22,7 @@ class NewsTableViewController: UIViewController, UITableViewDelegate, UITableVie
         
         self.blogTableView.layer.cornerRadius = 10
         self.blogTableView.layer.masksToBounds = true
+        self.blogTableView.rowHeight = 90
         
         downloadPosts()
 

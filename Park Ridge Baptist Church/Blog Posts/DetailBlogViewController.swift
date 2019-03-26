@@ -15,9 +15,11 @@ class DetailBlogViewController: UIViewController {
     var detailItem: Post?
     
     override func loadView() {
+        
         webView = WKWebView()
         view = webView
-        title = detailItem?.title.rendered
+        //title = detailItem?.title.rendered
+        
     }
     
     

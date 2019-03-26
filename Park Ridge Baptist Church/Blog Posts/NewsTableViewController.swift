@@ -54,7 +54,7 @@ class NewsTableViewController: UIViewController, UITableViewDelegate, UITableVie
         let vc = DetailBlogViewController()
         
         vc.detailItem = allBlogPosts[indexPath.row]
-        navigationController?.pushViewController(vc, animated: true)
+        self.present(vc, animated: true)
     }
     
     func downloadPosts() {
@@ -74,7 +74,6 @@ class NewsTableViewController: UIViewController, UITableViewDelegate, UITableVie
                     self.filteredBlogPosts = downloadedBlogPosts
                     self.blogTableView.reloadData()
                     self.refreshControl.endRefreshing()
-                    
                 }
             } catch {
                 print(error.localizedDescription)

@@ -12,12 +12,17 @@ class NewsTableViewController: UIViewController, UITableViewDelegate, UITableVie
 
     var allBlogPosts = [Post]()
     var filteredBlogPosts = [Post]()
+    var refreshControl = UIRefreshControl()
     
     @IBOutlet weak var blogTableView: UITableView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action: #selector(refresh), for: UIControl.Event.valueChanged)
+        blogTableView.addSubview(refreshControl) // not required when using UITableViewController
         
         
         self.blogTableView.layer.cornerRadius = 10
@@ -51,12 +56,9 @@ class NewsTableViewController: UIViewController, UITableViewDelegate, UITableVie
         vc.detailItem = allBlogPosts[indexPath.row]
         navigationController?.pushViewController(vc, animated: true)
     }
-
-
-
-    
     
     func downloadPosts() {
+        
         DispatchQueue.global().async {
             do {
                 
@@ -71,6 +73,7 @@ class NewsTableViewController: UIViewController, UITableViewDelegate, UITableVie
                     self.allBlogPosts = downloadedBlogPosts
                     self.filteredBlogPosts = downloadedBlogPosts
                     self.blogTableView.reloadData()
+                    self.refreshControl.endRefreshing()
                     
                 }
             } catch {
@@ -80,5 +83,9 @@ class NewsTableViewController: UIViewController, UITableViewDelegate, UITableVie
     }
 
 
+    
+    @objc func refresh(sender:AnyObject) {
+        downloadPosts()
+    }
 }
 

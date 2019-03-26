@@ -17,24 +17,30 @@ class DetailBlogViewController: UIViewController {
     override func loadView() {
         webView = WKWebView()
         view = webView
-        
         title = detailItem?.title.rendered
-        
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
         guard let detailItem = detailItem else { return }
         
         let html = """
         <html>
         <head>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <style>
+        body {
+        font-family: 'Montserrat';font-size: 22px;
+        }
+        body {
+        font-size: 125%;
+        }
+        </style>
+        
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style> body { font-size: 150%; } </style>
+        
         </head>
         <body>
         \(detailItem.content.rendered)

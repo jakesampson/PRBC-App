@@ -7,24 +7,37 @@
 //
 
 import UIKit
+import MapKit
 
 class LocationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    }
 
-        // Do any additional setup after loading the view.
+    @IBAction func getDirectionsToPRBC(_ sender: Any) {
+        openMapForPlace()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func openMapForPlace() {
+        
+        let latitude: CLLocationDegrees = -27.712944231379204
+        let longitude: CLLocationDegrees = 153.03624629974365
+        
+        let regionDistance:CLLocationDistance = 10000
+        let coordinates = CLLocationCoordinate2DMake(latitude, longitude)
+        let regionSpan = MKCoordinateRegion(center: coordinates, latitudinalMeters: regionDistance, longitudinalMeters: regionDistance)
+        let options = [
+            MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: regionSpan.center),
+            MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: regionSpan.span)
+        ]
+        let placemark = MKPlacemark(coordinate: coordinates, addressDictionary: nil)
+        let mapItem = MKMapItem(placemark: placemark)
+        mapItem.name = "Park Ridge Baptist Church"
+        mapItem.openInMaps(launchOptions: options)
     }
-    */
-
+    
+    
 }

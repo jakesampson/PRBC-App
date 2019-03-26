@@ -18,16 +18,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launchscreen" translatesAutoresizingMaskIntoConstraints="NO" id="3p9-8Q-I0s">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="3p9-8Q-I0s">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KLCLogo" translatesAutoresizingMaskIntoConstraints="NO" id="EUF-6E-hem">
+                                <rect key="frame" x="97" y="314.66666666666669" width="181" height="183"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="183" id="Rwg-XD-aOf"/>
+                                    <constraint firstAttribute="width" constant="181" id="zuc-s9-oIo"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="EUF-6E-hem" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="6IC-P6-HVL"/>
                             <constraint firstAttribute="bottom" secondItem="3p9-8Q-I0s" secondAttribute="bottom" id="SaH-d6-ZfY"/>
                             <constraint firstItem="3p9-8Q-I0s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UkX-3L-MaK"/>
                             <constraint firstItem="3p9-8Q-I0s" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="e4U-Ls-U4K"/>
                             <constraint firstItem="3p9-8Q-I0s" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="n5L-Ev-3mE"/>
+                            <constraint firstItem="EUF-6E-hem" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="y66-Lz-KxF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -38,6 +47,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Launchscreen" width="375" height="812"/>
+        <image name="BG" width="375" height="812"/>
+        <image name="KLCLogo" width="171" height="173"/>
     </resources>
 </document>

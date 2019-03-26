@@ -14,13 +14,10 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="aCJ-r0-W8f" customClass="TabBarViewController" customModule="Park_Ridge_Baptist_Church" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" id="Ggg-Xh-HIr">
+                    <tabBar key="tabBar" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Ggg-Xh-HIr">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.2436643839" green="0.36461079120000001" blue="0.59218353030000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <color key="tintColor" red="0.2436643839" green="0.36461079120000001" blue="0.59218353030000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" red="0.2436643839" green="0.36461079120000001" blue="0.59218353030000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.25098039215686274" green="0.38039215686274508" blue="0.60392156862745094" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="nvM-jY-OqB" kind="relationship" relationship="viewControllers" id="seT-dN-Esa"/>

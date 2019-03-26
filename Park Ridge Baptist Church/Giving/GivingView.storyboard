@@ -23,14 +23,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GivingBG" translatesAutoresizingMaskIntoConstraints="NO" id="BNT-v7-23t">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GivingBG" translatesAutoresizingMaskIntoConstraints="NO" id="BNT-v7-23t">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GivingTitle" translatesAutoresizingMaskIntoConstraints="NO" id="jCD-y2-IgL">
-                                <rect key="frame" x="0.0" y="85" width="240" height="86"/>
+                                <rect key="frame" x="0.0" y="44" width="240" height="86"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="BRG-Nk-gaG"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="86" id="UZ4-cg-uGL"/>
                                     <constraint firstAttribute="height" constant="86" id="XpP-hO-2VK"/>
                                 </constraints>
                             </imageView>
@@ -45,20 +44,23 @@ your generosity</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDm-Vh-ow5">
                                 <rect key="frame" x="65" y="602" width="245" height="48"/>
                                 <state key="normal" image="GiveNowBtn"/>
+                                <connections>
+                                    <segue destination="LOO-Da-pmU" kind="presentation" id="aJf-ou-nLp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Rb4-2g-YFX" firstAttribute="trailing" secondItem="jCD-y2-IgL" secondAttribute="trailing" constant="135" id="8CP-ZN-yi6"/>
-                            <constraint firstItem="PDm-Vh-ow5" firstAttribute="centerX" secondItem="tPB-Po-VDK" secondAttribute="centerX" id="8Cd-Am-a69"/>
-                            <constraint firstItem="0XI-JX-gGc" firstAttribute="top" secondItem="PDm-Vh-ow5" secondAttribute="bottom" constant="10" id="BpK-0b-I4K"/>
-                            <constraint firstItem="jCD-y2-IgL" firstAttribute="top" secondItem="Rb4-2g-YFX" secondAttribute="top" constant="41" id="Cah-IF-PE1"/>
-                            <constraint firstItem="BNT-v7-23t" firstAttribute="top" secondItem="tPB-Po-VDK" secondAttribute="top" id="JNK-rc-Nnt"/>
-                            <constraint firstItem="0XI-JX-gGc" firstAttribute="centerX" secondItem="tPB-Po-VDK" secondAttribute="centerX" id="RGz-KB-tff"/>
-                            <constraint firstItem="jCD-y2-IgL" firstAttribute="leading" secondItem="BNT-v7-23t" secondAttribute="leading" id="hjy-TJ-ZN5"/>
-                            <constraint firstItem="Rb4-2g-YFX" firstAttribute="bottom" secondItem="0XI-JX-gGc" secondAttribute="bottom" constant="20" id="laJ-c0-0ec"/>
-                            <constraint firstItem="jCD-y2-IgL" firstAttribute="leading" secondItem="tPB-Po-VDK" secondAttribute="leading" id="mRx-rz-qFK"/>
-                            <constraint firstAttribute="bottom" secondItem="BNT-v7-23t" secondAttribute="bottom" id="uft-9e-4fQ"/>
+                            <constraint firstAttribute="bottom" secondItem="BNT-v7-23t" secondAttribute="bottom" id="11Y-Qw-x7d"/>
+                            <constraint firstItem="0XI-JX-gGc" firstAttribute="top" secondItem="PDm-Vh-ow5" secondAttribute="bottom" constant="10" id="2Kh-Hn-b7e"/>
+                            <constraint firstItem="PDm-Vh-ow5" firstAttribute="centerX" secondItem="tPB-Po-VDK" secondAttribute="centerX" id="9bv-Az-jzK"/>
+                            <constraint firstItem="BNT-v7-23t" firstAttribute="leading" secondItem="Rb4-2g-YFX" secondAttribute="leading" id="ABQ-Lz-fZm"/>
+                            <constraint firstItem="0XI-JX-gGc" firstAttribute="centerX" secondItem="tPB-Po-VDK" secondAttribute="centerX" id="EPo-WK-TWk"/>
+                            <constraint firstItem="Rb4-2g-YFX" firstAttribute="bottom" secondItem="0XI-JX-gGc" secondAttribute="bottom" constant="20" id="GZw-2a-PwW"/>
+                            <constraint firstItem="BNT-v7-23t" firstAttribute="trailing" secondItem="Rb4-2g-YFX" secondAttribute="trailing" id="YWj-G6-T84"/>
+                            <constraint firstItem="jCD-y2-IgL" firstAttribute="leading" secondItem="Rb4-2g-YFX" secondAttribute="leading" id="b9b-ja-xxI"/>
+                            <constraint firstItem="BNT-v7-23t" firstAttribute="top" secondItem="tPB-Po-VDK" secondAttribute="top" id="eoY-up-0dP"/>
+                            <constraint firstItem="jCD-y2-IgL" firstAttribute="top" secondItem="Rb4-2g-YFX" secondAttribute="top" id="tpv-GV-GhQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Rb4-2g-YFX"/>
                     </view>
@@ -68,6 +70,60 @@ your generosity</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jt0-7J-KrN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1039.2" y="158.12807881773401"/>
+        </scene>
+        <!--Giving Web View Controller-->
+        <scene sceneID="tqs-uB-UXu">
+            <objects>
+                <viewController id="LOO-Da-pmU" customClass="GivingWebViewController" customModule="Park_Ridge_Baptist_Church" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rg2-pF-ww8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A5h-HV-lW7">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                                <color key="backgroundColor" red="0.36078431372549019" green="0.38823529411764707" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <wkWebViewConfiguration key="configuration" allowsAirPlayForMediaPlayback="NO" allowsPictureInPictureMediaPlayback="NO">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gSV-7x-092">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4aj-Xc-gum"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem id="CzF-Ew-jdM">
+                                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="done" id="2R8-IC-eHA">
+                                            <connections>
+                                                <action selector="dismissViewController:" destination="LOO-Da-pmU" id="UxQ-fG-v9w"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gSV-7x-092" firstAttribute="trailing" secondItem="RBU-XJ-dkB" secondAttribute="trailing" id="2z0-FN-1e0"/>
+                            <constraint firstItem="gSV-7x-092" firstAttribute="leading" secondItem="RBU-XJ-dkB" secondAttribute="leading" id="dVR-aK-xWL"/>
+                            <constraint firstItem="A5h-HV-lW7" firstAttribute="leading" secondItem="RBU-XJ-dkB" secondAttribute="leading" id="eFd-SE-GG0"/>
+                            <constraint firstItem="A5h-HV-lW7" firstAttribute="top" secondItem="gSV-7x-092" secondAttribute="bottom" id="fQ3-gc-Nxd"/>
+                            <constraint firstItem="A5h-HV-lW7" firstAttribute="trailing" secondItem="RBU-XJ-dkB" secondAttribute="trailing" id="pbB-8I-IgM"/>
+                            <constraint firstAttribute="bottom" secondItem="A5h-HV-lW7" secondAttribute="bottom" id="w4c-fI-H8e"/>
+                            <constraint firstItem="gSV-7x-092" firstAttribute="top" secondItem="RBU-XJ-dkB" secondAttribute="top" id="xTF-dx-Gng"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RBU-XJ-dkB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bbm-dJ-upU"/>
+                    <connections>
+                        <outlet property="givingWebView" destination="A5h-HV-lW7" id="HRB-sF-OCz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="64b-0y-ski" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1852" y="157.38916256157637"/>
         </scene>
     </scenes>
     <resources>

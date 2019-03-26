@@ -26,20 +26,23 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LocationBG" translatesAutoresizingMaskIntoConstraints="NO" id="OQy-TA-jMl">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LocationTitle" translatesAutoresizingMaskIntoConstraints="NO" id="aWa-Qd-pnQ">
-                                <rect key="frame" x="0.0" y="85" width="323" height="86"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="86" id="5ta-5c-11g"/>
-                                    <constraint firstAttribute="height" constant="86" id="MyC-EC-dcg"/>
-                                    <constraint firstAttribute="width" constant="323" id="zDs-FH-XWB"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmK-Od-6lJ">
-                                <rect key="frame" x="65" y="654" width="245" height="50"/>
+                                <rect key="frame" x="65" y="659" width="245" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="245" id="4B3-MX-OUj"/>
+                                    <constraint firstAttribute="height" constant="50" id="v7Q-IC-Eu1"/>
+                                </constraints>
                                 <state key="normal" image="DirectionsBtn"/>
+                                <connections>
+                                    <action selector="getDirectionsToPRBC:" destination="jAT-pK-8XN" eventType="touchUpInside" id="Ggj-td-cw7"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZh-BP-9A8">
-                                <rect key="frame" x="54.666666666666657" y="570.66666666666663" width="265.66666666666674" height="73.333333333333371"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="cZh-BP-9A8">
+                                <rect key="frame" x="52.666666666666657" y="576" width="270" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="N1H-W5-cnY"/>
+                                    <constraint firstAttribute="width" constant="270" id="rwO-TQ-IZR"/>
+                                </constraints>
                                 <string key="text">3922 Mount Lindesay Hwy,
  Park Ridge
 QLD 4125</string>
@@ -47,25 +50,34 @@ QLD 4125</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChurchCard" translatesAutoresizingMaskIntoConstraints="NO" id="aLh-Tc-EdP">
-                                <rect key="frame" x="26" y="192.66666666666663" width="323" height="368"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LocationTitle" translatesAutoresizingMaskIntoConstraints="NO" id="aWa-Qd-pnQ">
+                                <rect key="frame" x="0.0" y="44" width="323" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="MyC-EC-dcg"/>
+                                    <constraint firstAttribute="width" constant="323" id="zDs-FH-XWB"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChurchCard" translatesAutoresizingMaskIntoConstraints="NO" id="aLh-Tc-EdP">
+                                <rect key="frame" x="30" y="135" width="315" height="436"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="OQy-TA-jMl" firstAttribute="trailing" secondItem="a6O-kI-gMR" secondAttribute="trailing" id="6a3-gH-lLH"/>
-                            <constraint firstItem="aWa-Qd-pnQ" firstAttribute="top" secondItem="a6O-kI-gMR" secondAttribute="top" constant="41" id="9C2-Bq-H8f"/>
-                            <constraint firstItem="a6O-kI-gMR" firstAttribute="trailing" secondItem="aWa-Qd-pnQ" secondAttribute="trailing" constant="52" id="KI2-YZ-wh0"/>
-                            <constraint firstItem="OQy-TA-jMl" firstAttribute="top" secondItem="OpQ-9F-T64" secondAttribute="top" id="RcM-cl-XUq"/>
-                            <constraint firstItem="qmK-Od-6lJ" firstAttribute="centerX" secondItem="OpQ-9F-T64" secondAttribute="centerX" id="Xjz-a5-0Ch"/>
-                            <constraint firstAttribute="bottom" secondItem="OQy-TA-jMl" secondAttribute="bottom" id="aOi-w8-lWN"/>
-                            <constraint firstItem="cZh-BP-9A8" firstAttribute="centerX" secondItem="OpQ-9F-T64" secondAttribute="centerX" id="iDW-Up-WOI"/>
-                            <constraint firstItem="aWa-Qd-pnQ" firstAttribute="leading" secondItem="OQy-TA-jMl" secondAttribute="leading" id="it7-mT-mag"/>
-                            <constraint firstItem="aLh-Tc-EdP" firstAttribute="centerX" secondItem="OpQ-9F-T64" secondAttribute="centerX" id="kGh-rb-8gk"/>
-                            <constraint firstItem="a6O-kI-gMR" firstAttribute="bottom" secondItem="qmK-Od-6lJ" secondAttribute="bottom" constant="25" id="nkX-oP-QHu"/>
-                            <constraint firstItem="cZh-BP-9A8" firstAttribute="top" secondItem="aLh-Tc-EdP" secondAttribute="bottom" constant="10" id="t3c-uV-EWH"/>
-                            <constraint firstItem="OQy-TA-jMl" firstAttribute="leading" secondItem="a6O-kI-gMR" secondAttribute="leading" id="tc8-51-hG6"/>
-                            <constraint firstItem="qmK-Od-6lJ" firstAttribute="top" secondItem="cZh-BP-9A8" secondAttribute="bottom" constant="10" id="vWd-FV-DL7"/>
+                            <constraint firstItem="aLh-Tc-EdP" firstAttribute="centerX" secondItem="OpQ-9F-T64" secondAttribute="centerX" id="EDQ-qN-izB"/>
+                            <constraint firstItem="a6O-kI-gMR" firstAttribute="bottom" secondItem="qmK-Od-6lJ" secondAttribute="bottom" constant="20" id="FIb-Oj-BOb"/>
+                            <constraint firstItem="qmK-Od-6lJ" firstAttribute="top" secondItem="cZh-BP-9A8" secondAttribute="bottom" constant="10" id="HtJ-km-ngL"/>
+                            <constraint firstItem="qmK-Od-6lJ" firstAttribute="centerX" secondItem="OpQ-9F-T64" secondAttribute="centerX" id="RDb-EA-4wb"/>
+                            <constraint firstItem="a6O-kI-gMR" firstAttribute="trailing" secondItem="aLh-Tc-EdP" secondAttribute="trailing" constant="30" id="Vwa-e7-9AB"/>
+                            <constraint firstItem="cZh-BP-9A8" firstAttribute="top" secondItem="aLh-Tc-EdP" secondAttribute="bottom" constant="5" id="Ztp-PR-JrZ"/>
+                            <constraint firstItem="OQy-TA-jMl" firstAttribute="leading" secondItem="OpQ-9F-T64" secondAttribute="leading" id="dHE-V9-Go2"/>
+                            <constraint firstItem="aWa-Qd-pnQ" firstAttribute="top" secondItem="a6O-kI-gMR" secondAttribute="top" id="dnM-jg-hiT"/>
+                            <constraint firstAttribute="trailing" secondItem="OQy-TA-jMl" secondAttribute="trailing" id="ghn-o5-Na9"/>
+                            <constraint firstAttribute="bottom" secondItem="OQy-TA-jMl" secondAttribute="bottom" id="h3h-JY-UvG"/>
+                            <constraint firstItem="aLh-Tc-EdP" firstAttribute="leading" secondItem="a6O-kI-gMR" secondAttribute="leading" constant="30" id="js1-iN-SF2"/>
+                            <constraint firstItem="OQy-TA-jMl" firstAttribute="top" secondItem="OpQ-9F-T64" secondAttribute="top" id="jzk-KQ-zS5"/>
+                            <constraint firstItem="cZh-BP-9A8" firstAttribute="centerX" secondItem="OpQ-9F-T64" secondAttribute="centerX" id="lPt-Md-DRC"/>
+                            <constraint firstItem="aWa-Qd-pnQ" firstAttribute="leading" secondItem="a6O-kI-gMR" secondAttribute="leading" id="pOq-LH-Vfp"/>
+                            <constraint firstItem="aLh-Tc-EdP" firstAttribute="top" secondItem="aWa-Qd-pnQ" secondAttribute="bottom" constant="5" id="qnu-Xv-9D3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="a6O-kI-gMR"/>
                     </view>
@@ -74,7 +86,7 @@ QLD 4125</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zp8-sd-eoL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="137.4384236453202"/>
+            <point key="canvasLocation" x="116" y="135.96059113300493"/>
         </scene>
     </scenes>
     <resources>

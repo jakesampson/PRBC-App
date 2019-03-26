@@ -27,6 +27,7 @@
 		23BB1B702209A820006F34DF /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BB1B6F2209A820006F34DF /* JSONDecoder.swift */; };
 		23BB1B732209B3A4006F34DF /* DetailBlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BB1B722209B3A4006F34DF /* DetailBlogViewController.swift */; };
 		23C54238221D324E00F0B431 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C54237221D324E00F0B431 /* TabBarViewController.swift */; };
+		23CE7D192224FF9200C6802D /* GivingWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CE7D182224FF9200C6802D /* GivingWebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		23BB1B6F2209A820006F34DF /* JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
 		23BB1B722209B3A4006F34DF /* DetailBlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBlogViewController.swift; sourceTree = "<group>"; };
 		23C54237221D324E00F0B431 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		23CE7D182224FF9200C6802D /* GivingWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GivingWebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				234941A5221548A300BCBD32 /* GivingView.storyboard */,
+				23CE7D182224FF9200C6802D /* GivingWebViewController.swift */,
 				234941A32215489300BCBD32 /* GivingViewController.swift */,
 			);
 			path = Giving;
@@ -189,6 +192,7 @@
 				TargetAttributes = {
 					23BB1B3122082040006F34DF = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -245,6 +249,7 @@
 				23BB1B482208235D006F34DF /* JSON Struct.swift in Sources */,
 				23BB1B3822082040006F34DF /* NewsTableViewController.swift in Sources */,
 				23BB1B3622082040006F34DF /* AppDelegate.swift in Sources */,
+				23CE7D192224FF9200C6802D /* GivingWebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,7 +407,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakesampson.ParkRidgeBaptistChurch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = PRBCDevelopmentProfile;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -423,7 +428,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakesampson.ParkRidgeBaptistChurch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = PRBCDevelopmentProfile;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

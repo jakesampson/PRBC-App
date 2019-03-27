@@ -5,16 +5,25 @@
 //  Created by Jake Sampson on 4/2/19.
 //  Copyright © 2019 Jake Sampson. All rights reserved.
 //
-
 import UIKit
 
 class NewsTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     var allBlogPosts = [Post]()
     var filteredBlogPosts = [Post]()
     var refreshControl = UIRefreshControl()
     
     @IBOutlet weak var blogTableView: UITableView!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        super.viewWillAppear(animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        super.viewWillDisappear(animated)
+    } 
     
     
     override func viewDidLoad() {
@@ -30,7 +39,7 @@ class NewsTableViewController: UIViewController, UITableViewDelegate, UITableVie
         self.blogTableView.rowHeight = 90
         
         downloadPosts()
-
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -54,7 +63,7 @@ class NewsTableViewController: UIViewController, UITableViewDelegate, UITableVie
         let vc = DetailBlogViewController()
         
         vc.detailItem = allBlogPosts[indexPath.row]
-        self.present(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func downloadPosts() {
@@ -74,17 +83,17 @@ class NewsTableViewController: UIViewController, UITableViewDelegate, UITableVie
                     self.filteredBlogPosts = downloadedBlogPosts
                     self.blogTableView.reloadData()
                     self.refreshControl.endRefreshing()
+                    
                 }
             } catch {
                 print(error.localizedDescription)
             }
         }
     }
-
-
+    
+    
     
     @objc func refresh(sender:AnyObject) {
         downloadPosts()
     }
 }
-

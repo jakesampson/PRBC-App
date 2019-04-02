@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05A3CB68A4C942104EA51C51 /* Pods_Park_Ridge_Baptist_Church.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8932CCBA590CCD7F5C5B0DEB /* Pods_Park_Ridge_Baptist_Church.framework */; };
 		2349419C221546B300BCBD32 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2349419B221546B300BCBD32 /* LocationViewController.swift */; };
 		234941A22215477B00BCBD32 /* LocationView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234941A12215477B00BCBD32 /* LocationView.storyboard */; };
 		234941A42215489300BCBD32 /* GivingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234941A32215489300BCBD32 /* GivingViewController.swift */; };
@@ -54,6 +55,9 @@
 		23BB1B722209B3A4006F34DF /* DetailBlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBlogViewController.swift; sourceTree = "<group>"; };
 		23C54237221D324E00F0B431 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		23CE7D182224FF9200C6802D /* GivingWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GivingWebViewController.swift; sourceTree = "<group>"; };
+		8932CCBA590CCD7F5C5B0DEB /* Pods_Park_Ridge_Baptist_Church.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Park_Ridge_Baptist_Church.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8C9BE9945B558A1D0C8829A /* Pods-Park Ridge Baptist Church.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Park Ridge Baptist Church.debug.xcconfig"; path = "Target Support Files/Pods-Park Ridge Baptist Church/Pods-Park Ridge Baptist Church.debug.xcconfig"; sourceTree = "<group>"; };
+		F50B4B7CB162C3FA302C8A52 /* Pods-Park Ridge Baptist Church.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Park Ridge Baptist Church.release.xcconfig"; path = "Target Support Files/Pods-Park Ridge Baptist Church/Pods-Park Ridge Baptist Church.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05A3CB68A4C942104EA51C51 /* Pods_Park_Ridge_Baptist_Church.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +107,8 @@
 			children = (
 				23BB1B3422082040006F34DF /* Park Ridge Baptist Church */,
 				23BB1B3322082040006F34DF /* Products */,
+				603D0D65BEF9D52FAF7B9A3A /* Pods */,
+				F3656320A50B0D6AE34E427C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,6 +167,24 @@
 			path = Location;
 			sourceTree = "<group>";
 		};
+		603D0D65BEF9D52FAF7B9A3A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8C9BE9945B558A1D0C8829A /* Pods-Park Ridge Baptist Church.debug.xcconfig */,
+				F50B4B7CB162C3FA302C8A52 /* Pods-Park Ridge Baptist Church.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F3656320A50B0D6AE34E427C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8932CCBA590CCD7F5C5B0DEB /* Pods_Park_Ridge_Baptist_Church.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,9 +192,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23BB1B4422082042006F34DF /* Build configuration list for PBXNativeTarget "Park Ridge Baptist Church" */;
 			buildPhases = (
+				B6E4EA87D19122472A099B33 /* [CP] Check Pods Manifest.lock */,
 				23BB1B2E22082040006F34DF /* Sources */,
 				23BB1B2F22082040006F34DF /* Frameworks */,
 				23BB1B3022082040006F34DF /* Resources */,
+				5DE36A8D9B477E16F31E9ED6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,6 +261,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DE36A8D9B477E16F31E9ED6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Park Ridge Baptist Church/Pods-Park Ridge Baptist Church-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Park Ridge Baptist Church/Pods-Park Ridge Baptist Church-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6E4EA87D19122472A099B33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Park Ridge Baptist Church-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		23BB1B2E22082040006F34DF /* Sources */ = {
@@ -393,6 +469,7 @@
 		};
 		23BB1B4522082042006F34DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8C9BE9945B558A1D0C8829A /* Pods-Park Ridge Baptist Church.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -414,9 +491,10 @@
 		};
 		23BB1B4622082042006F34DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F50B4B7CB162C3FA302C8A52 /* Pods-Park Ridge Baptist Church.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = GXS8S5Y9H5;
 				INFOPLIST_FILE = "Park Ridge Baptist Church/Info.plist";
@@ -427,7 +505,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakesampson.ParkRidgeBaptistChurch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = PRBCDevelopmentProfile;
+				PROVISIONING_PROFILE_SPECIFIER = PRBCDistributionProfile;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
